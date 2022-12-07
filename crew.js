@@ -42,6 +42,11 @@ data.crew.forEach(element => {
 console.log(names)
 
 primero.addEventListener("click", function(){
+    primero.classList.add("white")
+    segundo.classList.remove("white")
+    tercero.classList.remove("white")
+    cuarto.classList.remove("white")
+
     name.innerHTML = `${names[3].toUpperCase()}`
     role.innerHTML = `${roles[3].toUpperCase()}`
     bio.innerHTML = `${bios[3]}`
@@ -50,6 +55,11 @@ primero.addEventListener("click", function(){
 
 
 segundo.addEventListener("click", function(){
+    segundo.classList.add("white")
+    primero.classList.remove("white")
+    tercero.classList.remove("white")
+    cuarto.classList.remove("white")
+
     name.innerHTML = `${names[0].toUpperCase()}`
     role.innerHTML = `${roles[0].toUpperCase()}`
     bio.innerHTML = `${bios[0]}`
@@ -57,6 +67,11 @@ segundo.addEventListener("click", function(){
 })
 
 tercero.addEventListener("click", function(){
+    tercero.classList.add("white")
+    primero.classList.remove("white")
+    segundo.classList.remove("white")
+    cuarto.classList.remove("white")
+
     name.innerHTML = `${names[1].toUpperCase()}`
     role.innerHTML = `${roles[1].toUpperCase()}`
     bio.innerHTML = `${bios[0]}`
@@ -64,6 +79,11 @@ tercero.addEventListener("click", function(){
 })
 
 cuarto.addEventListener("click", function(){
+    cuarto.classList.add("white")
+    primero.classList.remove("white")
+    segundo.classList.remove("white")
+    tercero.classList.remove("white")
+
     name.innerHTML = `${names[2].toUpperCase()}`
     role.innerHTML = `${roles[2].toUpperCase()}`
     bio.innerHTML = `${bios[2]}`
