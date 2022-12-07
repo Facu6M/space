@@ -46,7 +46,7 @@ uno.addEventListener("click", function() {
     uno.classList.remove("one")
     uno.classList.add("circle")
 
-
+ name.innerHTML = `${names[0].toUpperCase()}`
     description.innerHTML = `${descriptions[0]}`
     imagen.src = "./images/image-launch-vehicle-portrait.jpg";
 })
