@@ -1,0 +1,172 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#icon{
+    margin: 2rem;
+}
+
+body{
+    background-image: url("./background-home-desktop.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#logo{
+    margin: 2rem;
+}
+
+.flex{
+    display: flex;
+    gap: var(--gap, 5rem);
+}
+
+.primary-header{
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+#primary-navigation{
+    background-color: rgba(128, 109, 109, 0.2);
+    backdrop-filter: blur(10px);
+    list-style: none;
+    padding: 30px;
+}
+
+a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+
+.primary-navigation a > span {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-inline-end:0.75em ;
+}
+
+
+.active{
+    border-bottom: 2px solid slategrey;
+}
+
+
+/* main */
+
+#main{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin-top: 150px;
+}
+
+p{
+    font-size: 25px;
+    color:white;
+}
+
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:white;
+   font-weight: 1;
+     font-size: 100px;
+}
+
+#text{
+    width: 400px;
+    height: 300px;
+}
+
+.explore{
+    border-radius: 50%;
+    height: 150px;
+    text-align: center;
+    width: 150px;
+    background-color: rgb(192, 183, 183);
+   display: flex;
+
+justify-content: center;
+align-items: center;
+}
+
+.explore p {
+    color: black;
+}
+
+h2{
+    padding-top: 40px;
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 12px;
+   color: white;
+   opacity: 0.65;
+}
+
+.py-6 {
+    display: none;
+}
+
+#text p {
+    opacity: 0.7;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-bottom: 20px;
+}
+
+#close {
+    display: none;
+    cursor: pointer;
+}
+
+
+
+/* TABLET */
+
+@media (max-width: 768px) {
+
+    body{
+        background-image: url("./background-home-tablet.jpg");
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+  #primary-navigation{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+nav{
+    display: none;
+}
+
+
+
+
+.py-6 {
+    display: block;
+    cursor: pointer;
+}
+
+
+}
+
+/* HOME MOBILE */
+
+@media (max-width: 450px) {
+    body{
+        background-image: url("./background-home-mobile.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+}
